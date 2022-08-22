@@ -6,6 +6,7 @@ import HeaderThree from "../component/header/HeaderThree";
 import { FaLinkedinIn, FaYoutube, FaMediumM, FaGithub, FaInstagram, FaFacebookF, FaDiscord, FaTwitter, FaChevronRight } from "react-icons/fa";
 import { FiGlobe } from "react-icons/fi";
 import FooterTwo from "../component/footer/FooterTwo";
+import HeaderFour from "../component/header/HeaderFour";
 
 const SocialShare = [
     { Social: <FiGlobe />, link: 'https://www.paygroup.com.br/' },
@@ -17,7 +18,7 @@ class paygroup extends Component{
             <React.Fragment>
             <div className="active-dark">
             <PageHelmet pageTitle='Project: PayGroup'/>
-            <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+            <HeaderFour homeLink="/" logo="symbol-dark" color="color-black"/>
                 
                 {/* Start Portfolio Details */}
                 <div className="rn-portfolio-details pt--150 bg_color--5">

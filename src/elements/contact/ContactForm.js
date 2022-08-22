@@ -41,7 +41,7 @@ function ContactForm({ props }) {
                         name="name"        
                         placeholder="name"
                         required
-                        style={{ fontFamily: 'poppins', color: 'white' }}
+                        style={{ fontFamily: 'Anek Telugu', color: 'white' }}
                     />              
             </div>            
 
@@ -50,7 +50,7 @@ function ContactForm({ props }) {
                                             type="text"
                                             name="email"                                         
                                             placeholder="email"
-                                            style={{ fontFamily: 'poppins', color:'white' }}
+                                            style={{ fontFamily: 'Anek Telugu', color:'white' }}
                                         />            
             </div>
 
@@ -59,7 +59,7 @@ function ContactForm({ props }) {
                                             type="text"                                            
                                             name="message"                                           
                                             placeholder="message"
-                                            style={{ fontFamily: 'poppins', color:'white', paddingTop:'10px' }}
+                                            style={{ fontFamily: 'Anek Telugu', color:'white', paddingTop:'10px' }}
                                         />  
             </div>
 

@@ -10,6 +10,7 @@ import Footer from "../component/footer/Footer";
 import HeaderThree from "../component/header/HeaderThree";
 import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn, FaApple, FaAndroid, FaYoutube, FaSpotify, FaChevronRight } from "react-icons/fa";
 import FooterTwo from "../component/footer/FooterTwo";
+import HeaderFour from "../component/header/HeaderFour";
 
 const SocialShare = [
     { Social: <FaSpotify />, link: 'https://open.spotify.com/artist/5Pj9fMzcocDNWzC3ko3Upb' },
@@ -34,7 +35,7 @@ class fmpxtella extends Component{
             <React.Fragment>
             <div className="active-dark">
             <PageHelmet pageTitle='Project: FMP x TELLA' />
-            <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+            <HeaderFour homeLink="/" logo="symbol-dark" color="color-black"/>
                 
                 {/* Start Portfolio Details */}
                 <div className="rn-portfolio-details pt--150 bg_color--5">

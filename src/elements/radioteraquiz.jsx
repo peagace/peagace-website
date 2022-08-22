@@ -10,6 +10,7 @@ import Footer from "../component/footer/Footer";
 import HeaderThree from "../component/header/HeaderThree";
 import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn, FaApple, FaAndroid, FaChevronRight } from "react-icons/fa";
 import FooterTwo from "../component/footer/FooterTwo";
+import HeaderFour from "../component/header/HeaderFour";
 
 const SocialShare = [
     { Social: <FiGlobe />, link: 'https://www.radioteraquiz.com.br/' },
@@ -23,7 +24,7 @@ class radioteraquiz extends Component{
             <React.Fragment>
                 <div className="active-dark">
                 <PageHelmet pageTitle='Project: Radioteraquiz' />
-                <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+                <HeaderFour homeLink="/" logo="symbol-dark" color="color-black"/>
                     
                     {/* Start Portfolio Details */}
                     <div className="rn-portfolio-details pt--150 bg_color--5">

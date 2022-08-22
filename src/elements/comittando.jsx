@@ -6,6 +6,7 @@ import Footer from "../component/footer/Footer";
 import HeaderThree from "../component/header/HeaderThree";
 import { FaLinkedinIn, FaYoutube, FaMediumM, FaGithub, FaChevronRight } from "react-icons/fa";
 import FooterTwo from "../component/footer/FooterTwo";
+import HeaderFour from "../component/header/HeaderFour";
 
 const SocialShare = [
     { Social: <FaYoutube />, link: 'https://www.youtube.com/c/Comitando' },
@@ -20,7 +21,7 @@ class comittando extends Component{
             <React.Fragment>
                 <div className="active-dark">
                 <PageHelmet pageTitle='Project: Comittando_.' />
-                <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+                <HeaderFour homeLink="/" logo="symbol-dark" color="color-black"/>
                     
                     {/* Start Portfolio Details */}
                     <div className="rn-portfolio-details pt--150 bg_color--5">
@@ -29,7 +30,7 @@ class comittando extends Component{
                                 <div className="col-lg-12">
                                     <div className="inner">
                                         <h2>Comittando_.</h2>
-                                        <p className="subtitle" style={{ color: '#969696' }}>A medical company that promotes educational content across the internet. This is one of our creations at <a href={'https://peagace.com/project/hokupco'} rel="noopener noreferrer">hokup co.,</a> where we designed and executed the entire project, from Brand and UI Design to Mobile App Development.</p>
+                                        <p className="subtitle" style={{ color: '#969696' }}>A Brazilian company focused on creating easy and accessible educational content about technology, mobile development, and software engineering in portuguese.</p>
                                         <div className="portfolio-view-list d-flex flex-wrap pt--20">
                                             <div className="port-view" style={{ marginRight: '30px' }}>
                                                 <span style={{ color: '#969696' }}>Role</span>

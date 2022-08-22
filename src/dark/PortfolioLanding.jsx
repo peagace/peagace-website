@@ -1,4 +1,3 @@
-import React from 'react';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Helmet from "../component/common/Helmet";
@@ -11,6 +10,10 @@ import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
 import PortfolioMasonry from '../elements/portfolio/PortfolioMasonry';
+import React, { Component, useRef, Suspense } from "react";
+import { Canvas, Mesh, } from '@react-three/fiber'
+import { PresentationControls, ContactShadows, Stage, Float, Loader, Environment, SpotLight } from '@react-three/drei'
+import Model00 from './model00';
 
 const SlideList = [
     {
@@ -32,17 +35,44 @@ const PortfolioLanding = () => {
                 <div className="slider-wrapper">
                     {/* Start Single Slide */}
                     {SlideList.map((value , index) => (
-                        <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25" key={index}>
+                        // <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25" key={index}> 
+                        <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_color--6" key={index}> 
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-lg-12">
+
+                                    <div className="col-lg-8">
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
-                                            <h1 className="title">ART DIRECTION<h2> FOR DIGITAL PROJECTS.</h2></h1>                                      
-                                            
-                                                                                      
-                                        </div>
+                                            <h2 className="title">Art direction for digital projects.</h2>
+                                            <h6 style={{color:'#969696', fontWeight:'500'}}>From visual brand design to softwares and technology.</h6>
+                                        </div>                                    
                                     </div>
+
+                                    <div className="col-md-4">
+                                        <Suspense fallback={<Loader />}>
+                                            <Canvas camera={{ fov: 20, near: 0.1, far: 200, position: [0, 5, 25] }} flat dpr={[1, 2]} >
+                                                {/* <pointLight position={[-5, -1, 2]} color="#e8882a" intensity={1} />
+                                                <pointLight position={[5, -6, -1]} color="#4f00a3" intensity={1} />                                                 */}
+                                                <Model00 />
+                                                
+                                                
+                                                
+                                           
+
+                                                {/* <pointLight color="white" position={[1, -20, 0]} intensity={1} /> 
+                                                <pointLight color="OrangeRed" position={[10, -5, 0]} intensity={1} />
+                                                <pointLight color="LawnGreen" position={[-5, 1, -2]} intensity={1} />  */}
+
+                                                <pointLight color="Indigo" position={[-5, 1, -2]} intensity={10} />
+                                                <pointLight color="LawnGreen" position={[10, -5, 0]} intensity={10} />
+
+                                               <directionalLight color="gray" position={[0, -1, -1]} intensity={1} />
+                                               <directionalLight color="gray" position={[0, 0.1, -5]} intensity={1} />
+                                               
+                                            </Canvas>
+                                        </Suspense>                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
