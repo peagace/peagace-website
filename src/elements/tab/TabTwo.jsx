@@ -76,11 +76,11 @@ class TabsTwo extends Component{
                                             <ul>
                                                 <li>
                                                     <a style={{color:"white"}}>Modelling and texturing</a>
-                                                    Planning and proejcting ideias for digital projects, with visual and creative experiences.
+                                                    Organic and low poly modelling for games, animations and metaverse.
                                                 </li>
                                                 <li>
                                                     <a style={{color:"white"}}>Render and animations</a>
-                                                    Graphical and textual elements for social media and promote brand communication.
+                                                    2D static renders and animated 3D models.
                                                 </li>                                               
                                             </ul>
                                         </div>

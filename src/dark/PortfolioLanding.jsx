@@ -12,7 +12,7 @@ import BlogContent from "../elements/blog/BlogContent";
 import PortfolioMasonry from '../elements/portfolio/PortfolioMasonry';
 import React, { Component, useRef, Suspense } from "react";
 import { Canvas, Mesh, } from '@react-three/fiber'
-import { PresentationControls, ContactShadows, Stage, Float, Loader, Environment, SpotLight } from '@react-three/drei'
+import { PresentationControls, ContactShadows, Stage, Float, Loader, Environment, SpotLight, Lightformer } from '@react-three/drei'
 import Model00 from './model00';
 
 const SlideList = [
@@ -58,11 +58,32 @@ const PortfolioLanding = () => {
                                                 <pointLight color="OrangeRed" position={[10, -5, 0]} intensity={1} />
                                                 <pointLight color="LawnGreen" position={[-5, 1, -2]} intensity={1} />  */}
 
-                                                <pointLight color="Indigo" position={[-5, 1, -2]} intensity={10} />
-                                                <pointLight color="LawnGreen" position={[10, -5, 0]} intensity={10} />
+                                                {/* <pointLight color="Indigo" position={[-5, 1, -2]} intensity={10} />
+                                                <pointLight color="LawnGreen" position={[10, -5, 0]} intensity={10} /> */}
+                                                <Environment>                                                  
+                                                   <Lightformer
+                                                            form="circle" // circle | ring | rect (optional, default = rect)
+                                                            intensity={5} // power level (optional = 1)
+                                                            color="LawnGreen" // (optional = white)
+                                                            scale={[20, 3]} // Scale it any way you prefer (optional = [1, 1])
+                                                            target={[0, 0, 0]}
+                                                            position={[10, -5, 0]} // Target position (optional = undefined)
+                                                        /> 
 
-                                               <directionalLight color="gray" position={[0, -1, -1]} intensity={1} />
-                                               <directionalLight color="gray" position={[0, 0.1, -5]} intensity={1} />
+                                                    <Lightformer
+                                                            form="ring" // circle | ring | rect (optional, default = rect)
+                                                            intensity={5} // power level (optional = 1)
+                                                            color="Indigo" // (optional = white)
+                                                            scale={[50, 3]} // Scale it any way you prefer (optional = [1, 1])
+                                                            target={[0, 0, 0]}
+                                                            position={[-5, 1, -2]} // Target position (optional = undefined)
+                                                        />
+
+                                                    </Environment>
+                                                        
+
+                                                 <directionalLight color="gray" position={[0, -1, -1]} intensity={0.1} />
+                                               <directionalLight color="gray" position={[0, 1, -5]} intensity={0.1} />
                                                
                                             </Canvas>
                                         </Suspense>                                        

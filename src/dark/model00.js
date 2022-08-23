@@ -18,7 +18,7 @@ export default function Model00(props) {
       scale={4}
       >
       <sphereGeometry  args={[1, 64, 64]}/>
-      <MeshWobbleMaterial factor={25} speed={1} roughness={0} metalness={0.7} envMapIntensity={1} color={'#2e2e2e'}/>
+      <MeshWobbleMaterial factor={18} speed={1} roughness={0.5} metalness={0.7} envMapIntensity={1} color={'#2e2e2e'}/>
     </mesh>
   )
 }
