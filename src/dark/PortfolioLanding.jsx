@@ -53,12 +53,7 @@ const PortfolioLanding = () => {
                                             <Canvas camera={{ fov: 20, near: 0.1, far: 200, position: [0, 5, 25] }} flat dpr={[1, 2]} >
                                                 {/* <pointLight position={[-5, -1, 2]} color="#e8882a" intensity={1} />
                                                 <pointLight position={[5, -6, -1]} color="#4f00a3" intensity={1} />                                                 */}
-                                                <Model00 />
-                                                
-                                                
-                                                
-                                           
-
+                                                <Model00 />       
                                                 {/* <pointLight color="white" position={[1, -20, 0]} intensity={1} /> 
                                                 <pointLight color="OrangeRed" position={[10, -5, 0]} intensity={1} />
                                                 <pointLight color="LawnGreen" position={[-5, 1, -2]} intensity={1} />  */}

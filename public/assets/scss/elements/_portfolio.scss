@@ -359,6 +359,7 @@
                 transform: scale(1) translateZ(0);
                 &::before {
                     opacity: 0.85;
+                    background: linear-gradient(#ffffff00 10%, #000000 100%);
                 }
             }
         }

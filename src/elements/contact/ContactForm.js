@@ -50,6 +50,7 @@ function ContactForm({ props }) {
                                             type="text"
                                             name="email"                                         
                                             placeholder="email"
+                                            required
                                             style={{ fontFamily: 'Anek Telugu', color:'white' }}
                                         />            
             </div>
@@ -59,6 +60,7 @@ function ContactForm({ props }) {
                                             type="text"                                            
                                             name="message"                                           
                                             placeholder="message"
+                                            required
                                             style={{ fontFamily: 'Anek Telugu', color:'white', paddingTop:'10px' }}
                                         />  
             </div>
