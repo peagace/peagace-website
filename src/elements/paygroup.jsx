@@ -63,27 +63,27 @@ class paygroup extends Component{
                                 <div className="inner-wrapper">
                                     <div className="inner">
                                         <div className="thumbnail">
-                                            <img src="/assets/images/blog/21.png" alt="PayGroup image"/>
+                                            <img src="/assets/images/blog/21.jpg" alt="PayGroup image"/>
                                         </div>
 
                                         <div className="thumbnail pt--20">
-                                            <img src="/assets/images/blog/22.png" alt="PayGroup image"/>
+                                            <img src="/assets/images/blog/22.jpg" alt="PayGroup image"/>
                                         </div>
 
                                         <div className="thumbnail pt--20">
-                                        <img src="/assets/images/blog/23.png" alt="PayGroup image"/>
+                                        <img src="/assets/images/blog/23.jpg" alt="PayGroup image"/>
                                         </div>
 
                                         <div className="thumbnail pt--20">
-                                        <img src="/assets/images/blog/24.png" alt="PayGroup image"/>
+                                        <img src="/assets/images/blog/24.jpg" alt="PayGroup image"/>
                                         </div>
 
                                         <div className="thumbnail pt--20">
-                                        <img src="/assets/images/blog/25.png" alt="PayGroup image"/>
+                                        <img src="/assets/images/blog/25.jpg" alt="PayGroup image"/>
                                         </div>
 
                                         <div className="thumbnail pt--20 pb--80">
-                                        <img src="/assets/images/blog/26.png" alt="PayGroup image"/>
+                                        <img src="/assets/images/blog/26.jpg" alt="PayGroup image"/>
                                         </div>
                                      
                                     </div>
@@ -100,14 +100,14 @@ class paygroup extends Component{
                             <div className="row">  
                                 <div className="col-lg-12 col-md-12 col-12">
                                     <div className="related-work text-right">
-                                        <a href="/project/paygroup">
+                                        
                                             <div  className="inner">
                                                 <a className="rn-button-style--2 btn-outline" href={'/project/radioteraquiz'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
                                                     Next Project
                                                     <FaChevronRight className="ml--10"/>                                                   
                                                 </a>
                                             </div>
-                                        </a>
+                                      
                                     </div>
                                 </div>                         
                             </div>

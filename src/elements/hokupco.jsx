@@ -70,15 +70,15 @@ class hokupco extends Component {
                                     <div className="inner-wrapper">
                                         <div className="inner">
                                             <div className="thumbnail pt--20">
-                                                <img src="/assets/images/blog/41.png" alt="Blog Images"/>
+                                                <img src="/assets/images/blog/41.jpg" alt="Blog Images"/>
                                             </div>
 
                                             <div className="thumbnail pt--20">
-                                                <img src="/assets/images/blog/42.png" alt="Blog Images"/>
+                                                <img src="/assets/images/blog/42.jpg" alt="Blog Images"/>
                                             </div>
 
                                             <div className="thumbnail pt--20">
-                                                <img src="/assets/images/blog/43.png" alt="Blog Images"/>
+                                                <img src="/assets/images/blog/43.jpg" alt="Blog Images"/>
                                             </div>
 
                                             <div className="thumbnail pt--20">
@@ -90,7 +90,7 @@ class hokupco extends Component {
                                             </div>
 
                                             <div className="thumbnail pt--20 pb--80">
-                                            <img src="/assets/images/blog/46.png" alt="Blog Images"/>
+                                            <img src="/assets/images/blog/46.jpg" alt="Blog Images"/>
                                             </div>
                                         </div>
                                     </div>
@@ -106,14 +106,14 @@ class hokupco extends Component {
                             <div className="row">  
                                 <div className="col-lg-12 col-md-12 col-12">
                                     <div className="related-work text-right">
-                                        <a href="/project/paygroup">
+                                        
                                             <div  className="inner">
                                                 <a className="rn-button-style--2 btn-outline" href={'/project/fmpxtella'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
                                                     Next Project
                                                     <FaChevronRight className="ml--10"/>                                                   
                                                 </a>
                                             </div>
-                                        </a>
+                                       
                                     </div>
                                 </div>                         
                             </div>

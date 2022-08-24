@@ -70,15 +70,15 @@ class comittando extends Component{
                                             </div>
 
                                             <div className="thumbnail pt--20">
-                                                <img src="/assets/images/blog/62.png" alt="Radioteraquiz image"/>
+                                                <img src="/assets/images/blog/62.jpg" alt="Radioteraquiz image"/>
                                             </div>
 
                                             <div className="thumbnail pt--20">
-                                            <img src="/assets/images/blog/63.png" alt="Radioteraquiz image"/>
+                                            <img src="/assets/images/blog/63.jpg" alt="Radioteraquiz image"/>
                                             </div>
 
                                             <div className="thumbnail pt--20">
-                                            <img src="/assets/images/blog/64.png" alt="Radioteraquiz image"/>
+                                            <img src="/assets/images/blog/64.jpg" alt="Radioteraquiz image"/>
                                             </div>
 
                                             <div className="thumbnail pt--20">
@@ -86,7 +86,7 @@ class comittando extends Component{
                                             </div>
 
                                             <div className="thumbnail pt--20 pb--80">
-                                            <img src="/assets/images/blog/66.png" alt="Radioteraquiz image"/>
+                                            <img src="/assets/images/blog/66.jpg" alt="Radioteraquiz image"/>
                                             </div>
 
                                         </div>
@@ -102,14 +102,14 @@ class comittando extends Component{
                             <div className="row">  
                                 <div className="col-lg-12 col-md-12 col-12">
                                     <div className="related-work text-right">
-                                        <a href="/project/paygroup">
+                                        
                                             <div  className="inner">
                                                 <a className="rn-button-style--2 btn-outline" href={'/project/nftoyer'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
                                                     Next Project
                                                     <FaChevronRight className="ml--10"/>                                                   
                                                 </a>
                                             </div>
-                                        </a>
+                                       
                                     </div>
                                 </div>                         
                             </div>

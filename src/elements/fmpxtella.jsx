@@ -80,7 +80,7 @@ class fmpxtella extends Component{
                                 <div className="inner-wrapper">
                                     <div className="inner">
                                         <div className="thumbnail">
-                                            <img src="/assets/images/blog/51.png" alt="FMPxTELLA image"/>
+                                            <img src="/assets/images/blog/51.jpg" alt="FMPxTELLA image"/>
                                         </div>                                       
 
                                         <div className="thumbnail pt--20">
@@ -89,7 +89,7 @@ class fmpxtella extends Component{
 
                                         <div className="video-wrapper position-relative pt--20">
                                             <div className="thumbnail">
-                                                <img src="/assets/images/blog/53.png" alt="FMPxTELLA  Images"/>
+                                                <img src="/assets/images/blog/53.jpg" alt="FMPxTELLA  Images"/>
                                             </div>
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='VHgWv1mDNB0' onClose={() => this.setState({isOpen: false})} />
                                             <button className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
@@ -100,7 +100,7 @@ class fmpxtella extends Component{
                                         </div>
 
                                         <div className="thumbnail pt--20 pb--80">
-                                        <img src="/assets/images/blog/55.png" alt="FMPxTELLA  image"/>
+                                        <img src="/assets/images/blog/55.jpg" alt="FMPxTELLA  image"/>
                                         </div>
                                     </div>
                                 </div>
@@ -115,14 +115,14 @@ class fmpxtella extends Component{
                             <div className="row">  
                                 <div className="col-lg-12 col-md-12 col-12">
                                     <div className="related-work text-right">
-                                        <a href="/project/paygroup">
+                                        
                                             <div  className="inner">
                                                 <a className="rn-button-style--2 btn-outline" href={'/project/comittando'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
                                                     Next Project
                                                     <FaChevronRight className="ml--10"/>                                                   
                                                 </a>
                                             </div>
-                                        </a>
+                                        
                                     </div>
                                 </div>                         
                             </div>
