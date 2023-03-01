@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom";
 const PortfolioList = [
+    // {
+    //     image: 'image-9',
+    //     category: '3D Interactive Website',
+    //     title: 'IRBin',
+    //     link: '/project/irbin'
+    // },   
+    {
+        image: 'image-10',
+        category: 'Art Direction & 3D Modelling',
+        title: 'Só mais uma',
+        link: '/project/somaisuma'
+    },
     {
         image: 'image-3',
         category: 'Co-founder',
@@ -27,7 +39,7 @@ const PortfolioList = [
     },
     {
         image: 'image-8',
-        category: 'Art Direction + 3D Modelling',
+        category: 'Art Direction & 3D Modelling',
         title: 'FMP x TELLA',
         link: '/project/fmpxtella'
     },
@@ -37,18 +49,7 @@ const PortfolioList = [
         title: 'Comittando',
         link: '/project/comittando'
     },
-    // {
-    //     image: 'image-5',
-    //     category: '3D Game Design',
-    //     title: 'Pepsi Twist Run',
-    //     link: '/project/pepsitwistrun'
-    // },   
-    // {
-    //     image: 'image-7',
-    //     category: 'Branding',
-    //     title: 'Awesome Games',
-    //     link: '/project/awesomegames'
-    // },
+   
 ]
 
 class PortfolioMasonry extends Component{

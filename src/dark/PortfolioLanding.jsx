@@ -54,12 +54,7 @@ const PortfolioLanding = () => {
                                                 {/* <pointLight position={[-5, -1, 2]} color="#e8882a" intensity={1} />
                                                 <pointLight position={[5, -6, -1]} color="#4f00a3" intensity={1} />                                                 */}
                                                 <Model00 />       
-                                                {/* <pointLight color="white" position={[1, -20, 0]} intensity={1} /> 
-                                                <pointLight color="OrangeRed" position={[10, -5, 0]} intensity={1} />
-                                                <pointLight color="LawnGreen" position={[-5, 1, -2]} intensity={1} />  */}
 
-                                                {/* <pointLight color="Indigo" position={[-5, 1, -2]} intensity={10} />
-                                                <pointLight color="LawnGreen" position={[10, -5, 0]} intensity={10} /> */}
                                                 <Environment>                                                  
                                                    <Lightformer
                                                             form="circle" // circle | ring | rect (optional, default = rect)
@@ -79,8 +74,7 @@ const PortfolioLanding = () => {
                                                             position={[-5, 1, -2]} // Target position (optional = undefined)
                                                         />
 
-                                                    </Environment>
-                                                        
+                                                    </Environment>                                                     
 
                                                  <directionalLight color="gray" position={[0, -1, -1]} intensity={0.1} />
                                                <directionalLight color="gray" position={[0, 1, -5]} intensity={0.1} />

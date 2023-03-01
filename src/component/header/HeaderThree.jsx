@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn } from "react-icons/fa";
+import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn, FaBehanceSquare, FaArtstation } from "react-icons/fa";
 import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 
 const SocialShare = [
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/phalencarbatista/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/peagace'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/peagace'},    
+    {Social: <FaBehanceSquare /> , link: 'https://www.behance.net/peagace'},
+    {Social: <FaArtstation /> , link: 'https://www.artstation.com/peagace'},
     {Social: <FaTwitter /> , link: 'https://twitter.com/peagace_'},
 ]
 class HeaderThree extends Component{
