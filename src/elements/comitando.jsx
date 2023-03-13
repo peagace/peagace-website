@@ -9,18 +9,18 @@ import FooterTwo from "../component/footer/FooterTwo";
 import HeaderFour from "../component/header/HeaderFour";
 
 const SocialShare = [
-    { Social: <FaYoutube />, link: 'https://www.youtube.com/c/Comitando' },
+    { Social: <FaYoutube />, link: 'https://www.youtube.com/comitando' },
     { Social: <FaMediumM />, link: 'https://medium.com/@juliofernandes_3738' },
     { Social: <FaGithub />, link: 'https://github.com/jjfernandes87' },
-    { Social: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/julio-fernandes87/' },
+    { Social: <FaLinkedinIn />, link: 'https://www.linkedin.com/company/comitando/' },
 ]
 
-class comittando extends Component{
+class comitando extends Component{
     render(){
         return(
             <React.Fragment>
                 <div className="active-dark">
-                <PageHelmet pageTitle='Project: Comittando_.' />
+                <PageHelmet pageTitle='Project: Comitando_.' />
                 <HeaderFour homeLink="/" logo="symbol-dark" color="color-black"/>
                     
                     {/* Start Portfolio Details */}
@@ -29,7 +29,7 @@ class comittando extends Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="inner">
-                                        <h2>Comittando_.</h2>
+                                        <h2>Comitando_.</h2>
                                         <p className="subtitle" style={{ color: '#969696' }}>A Brazilian company focused on creating easy and accessible educational content about technology, mobile development, and software engineering in portuguese.</p>
                                         <div className="portfolio-view-list d-flex flex-wrap pt--20">
                                             <div className="port-view" style={{ marginRight: '30px' }}>
@@ -104,7 +104,7 @@ class comittando extends Component{
                                     <div className="related-work text-right">
                                         
                                             <div  className="inner">
-                                                <a className="rn-button-style--2 btn-outline" href={'/project/nftoyer'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
+                                                <a className="rn-button-style--2 btn-outline" href={'/project/somaisuma'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
                                                     Next Project
                                                     <FaChevronRight className="ml--10"/>                                                   
                                                 </a>
@@ -124,4 +124,4 @@ class comittando extends Component{
         )
     }
 }
-export default comittando;
+export default comitando;

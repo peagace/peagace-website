@@ -46,8 +46,8 @@ const PortfolioList = [
     {
         image: 'image-4',
         category: 'Branding',
-        title: 'Comittando',
-        link: '/project/comittando'
+        title: 'Comitando',
+        link: '/project/comitando'
     },
    
 ]

@@ -11,7 +11,7 @@ import DarkPortfolioLanding from './dark/PortfolioLanding';
 
 import hokupco from "./elements/hokupco";
 import nftoyer from "./elements/nftoyer";
-import comittando from "./elements/comittando";
+import comitando from "./elements/comitando";
 import radioteraquiz from "./elements/radioteraquiz";
 import awesomegames from "./elements/awesomegames";
 import paygroup from "./elements/paygroup";
@@ -36,7 +36,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/project/hokupco`} component={hokupco}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project/radioteraquiz`} component={radioteraquiz}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project/nftoyer`} component={nftoyer}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/project/comittando`} component={comittando}/>                        
+                        <Route exact path={`${process.env.PUBLIC_URL}/project/comitando`} component={comitando}/>                        
                         <Route exact path={`${process.env.PUBLIC_URL}/project/paygroup`} component={paygroup}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project/irbin`} component={irbin}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project/somaisuma`} component={somaisuma}/>                        

@@ -117,7 +117,7 @@ class fmpxtella extends Component{
                                     <div className="related-work text-right">
                                         
                                             <div  className="inner">
-                                                <a className="rn-button-style--2 btn-outline" href={'/project/comittando'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
+                                                <a className="rn-button-style--2 btn-outline" href={'/project/comitando'} style={{letterSpacing:'0px', margin:'0px', padding:'10px 30px'}}>
                                                     Next Project
                                                     <FaChevronRight className="ml--10"/>                                                   
                                                 </a>
