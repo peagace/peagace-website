@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <section className='bg-lightgray relative h-screen w-full flex'>
-      <motion.div className="flex flex-col py-4 px-4 h-screen w-full z-[1] self-center place-content-between bg-intro bg-cover"
+      <motion.div className="flex flex-col py-4 px-4 h-full w-screen z-[1] self-center place-content-between bg-intro bg-cover"
       initial={{ opacity: 0.5, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, easings:['easeOut'] }}
