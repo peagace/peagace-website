@@ -70,6 +70,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'intro': "url('/assets/main/bg.svg')",
+        'gradient-test':  "linear-gradient(180deg, #14121B 0%, #0C0A12 100%)",
         
       },
     },
