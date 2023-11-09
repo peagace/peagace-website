@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={myFont.className}>
-        {/* <Header /> */}
+        <Header />
         <SmoothScroll>
           {children}
         </SmoothScroll>

@@ -3,10 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { generalData } from '@/data/general-data';
 import { motion, AnimatePresence } from "framer-motion"
-
-
-
-
+import Experience from '@/components/canvas/Canvas';
 
 export default function Home() {
   const year = new Date().getFullYear()
@@ -28,7 +25,6 @@ export default function Home() {
 
     return  <>{currentTime}</>
   }
-
 
   return (
     <section className='bg-lightgray relative h-screen w-full flex'>

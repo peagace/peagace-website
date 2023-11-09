@@ -7,6 +7,7 @@ import MenuToggle from './Toggle'
 import Link from 'next/link'
 import { generalData } from '@/data/general-data'
 import { headerData } from '@/data/header-data'
+import Button from '../button/Button'
 
 
 export default function Header() {
@@ -20,13 +21,13 @@ export default function Header() {
     open: {
       height: '100vh',
       transition: {
-        type: 'spring',
-        bounce: 0.2,
-        duration: 1
+        type: 'easeout',
+        bounce: 0.1,
+        duration: 0.5
       }
     },
     closed: {
-      height: '80px',
+      height: '85px',
       transition: {
         type: 'spring',
         bounce: 0.2,
@@ -77,38 +78,39 @@ export default function Header() {
   return (
     <>
       <motion.div
-        className='z-[999] w-screen fixed flex flex-col mx-4 justify-center justify-items-center'
+        className='z-[999] w-full fixed flex flex-col justify-center justify-items-center'
         animate={toggle ? "open" : "closed"}
         variants={openNav}
         initial={false}
       >
-        <div className='grid grid-cols-12'>
+        <div className='grid grid-cols-12 mx-5'>
           {/* Logo */}
-          <a href='/' className='col-span-2'>
+          <a href='/' className='col-span-2 max-w-max'>
             <Image
               src="/assets/main/main-logo.svg"
               alt="PHC"
               width={45}
-              height={45}
-              className='backdrop-invert'
+              height={45}         
             />
           </a>
 
           {/* Navigation */}
-          <div className='col-span-4 col-start-6 self-center'>
+          <div className='flex col-span-8 col-start-8 self-center justify-end'>
+
+            <div className='pr-[60px]'>
             {headerData.map((i) => (
-              <Link key={i.id} href={i.href} className='text-base text-black underline hover:ease-out hover:transition hover:duration-100 ease-out transition duration-100 hover:text-accent px-4'>
+              <Link key={i.id} href={i.href} className='ml-5 decoration-1 text-base text-black underline hover:text-accent hover:transition-all ease-out duration-200'>
                 {i.text}
               </Link>
             ))}
+            </div>
+            <Button text={'PEDRO@PEAGACE.COM'} link={'mailto:pedro@peagace.com'} target={"_blank"}/>              
           </div>
 
-          <div className='col-span-3 col-start-10 self-center'>          
-            <Link href="/contato" className='text-base text-black underline hover:ease-out hover:transition hover:duration-100 ease-out transition duration-100 hover:text-accent'>PEDRO@PEAGACE.COM<span className="after:content-['_↗']"></span></Link>
-          </div>
+          
 
           {/* Hamburger */}
-          <motion.nav
+          {/* <motion.nav
             initial={false}
             animate={toggle ? "open" : "closed"}
             className='block md:hidden ml-auto'
@@ -118,10 +120,10 @@ export default function Header() {
                 setToggle(!toggle)
               }}
             />
-          </motion.nav>
+          </motion.nav> */}
         </div>
 
-        <div className={`${toggle ? "" : "hidden"} container md:hidden flex flex-col justify-between h-full`} >
+        {/* <div className={`${toggle ? "" : "hidden"} container md:hidden flex flex-col justify-between h-full w-full bg-white`} >
           <motion.div
             initial={false}
             animate={toggle ? "open" : "closed"}
@@ -160,7 +162,7 @@ export default function Header() {
             </div>
             <a href={`mailto:${generalData.email}`} className='text-gray hover:text-dark-gray font-manrope font-normal'>{generalData.email}</a>
           </motion.div>
-        </div>
+        </div> */}
 
       </motion.div>
     </>

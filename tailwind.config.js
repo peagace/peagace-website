@@ -65,6 +65,10 @@ module.exports = {
       lg: ["5.375rem", { lineHeight: "normal",fontWeight:100 }], //86 px
       xl: ["6.375rem", {fontWeight:100, lineHeight:'1.15', }], //102 px
     },
+    fontFamily: {
+      'grotesk': ["FFF Acid Grotesk"],
+      'grotesk-italic': ["FFF Acid Grotesk Italic"],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
