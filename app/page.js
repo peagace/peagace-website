@@ -4,27 +4,11 @@ import Image from 'next/image';
 import { generalData } from '@/data/general-data';
 import { motion, AnimatePresence } from "framer-motion"
 import Experience from '@/components/canvas/Canvas';
+import Clock from '@/components/clock/Clock';
 
 export default function Home() {
   const year = new Date().getFullYear()
-  // var today = new Date();
-  // var time = today.getHours() + ":" + today.getMinutes();
 
-  const Clock = () => {
-    const d = new Date();
-    const [currentTime, setCurrentTime] = React.useState('');
-
-    React.useEffect(() => {
-      const date = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-      const timer = setInterval(() => {
-        setCurrentTime(date);
-      }, 1000);
-
-      return () => clearInterval(timer);
-    })
-
-    return  <>{currentTime}</>
-  }
 
   return (
     <section className='bg-lightgray relative h-screen w-full flex'>
