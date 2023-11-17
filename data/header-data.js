@@ -11,7 +11,7 @@ const headerData = [
   },
   {
     id: 3,
-    href: "/contato",
+    href: "/contact",
     text: "CONTACT",
   },
 ]

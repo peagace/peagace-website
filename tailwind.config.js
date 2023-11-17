@@ -59,6 +59,7 @@ module.exports = {
       xs: ["0.75rem", { lineHeight: "normal",fontWeight:80 }], //12 px
       sm: ["1.06rem", { lineHeight: "normal",fontWeight:80 }],
       base: ["1.25rem", { lineHeight: "1.35",fontWeight:80 }], //20 px
+      halfest: ["1.75rem", { lineHeight: "normal",fontWeight:100 }], //32 px
       halfer: ["2.3755rem", { lineHeight: "normal",fontWeight:100 }], //38 px
       half: ["3.5rem", { lineHeight: "normal",fontWeight:100 }], //50 px
       medium: ["4.375rem", { lineHeight: "normal",fontWeight:100 }], //70 px
@@ -85,6 +86,8 @@ module.exports = {
         'project-preview-01':  "url('/assets/projects/air-01.png')",
         'project-preview-02':  "url('/assets/projects/mais-uma-01.png')",
         'project-preview-03':  "url('/assets/projects/nftoyer-01.png')",
+
+        'footer': "url('/assets/main/bg-footer.svg')",
         
       },
     },

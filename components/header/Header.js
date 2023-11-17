@@ -27,7 +27,7 @@ export default function Header() {
       }
     },
     closed: {
-      height: '85px',
+      height: '0px',
       transition: {
         type: 'spring',
         bounce: 0.2,
@@ -77,13 +77,7 @@ export default function Header() {
 
   return (
     <>
-      <motion.div
-        className='z-[999] w-full fixed flex flex-col justify-center justify-items-center'
-        animate={toggle ? "open" : "closed"}
-        variants={openNav}
-        initial={false}
-      >
-        <div className='grid grid-cols-12 mx-5'>
+        <div className='grid grid-cols-12 px-4 pt-4 bg-lightgray '>
           {/* Logo */}
           <a href='/' className='col-span-2 max-w-max'>
             <Image
@@ -92,11 +86,23 @@ export default function Header() {
               width={45}
               height={45}         
             />
-          </a>
+          </a>          
 
-          {/* Navigation */}
-          <div className='flex col-span-8 col-start-8 self-center justify-end'>
-
+          {/* Hamburger */}
+          <motion.nav
+            initial={false}
+            animate={toggle ? "open" : "closed"}
+            className='col-start-7 col-span-6 ml-auto bg-navbar-text-hover self-center'
+          >
+            <MenuToggle
+              toggle={() => {
+                setToggle(!toggle)
+              }}
+            />
+            
+          </motion.nav>   
+  
+          {/* <div className='flex col-span-8 col-start-8 self-center justify-end'>
             <div className='pr-[60px]'>
             {headerData.map((i) => (
               <Link key={i.id} href={i.href} className='ml-5 decoration-1 text-base text-black underline hover:text-accent hover:transition-all ease-out duration-200'>
@@ -105,25 +111,35 @@ export default function Header() {
             ))}
             </div>
             <Button text={'PEDRO@PEAGACE.COM'} link={'mailto:pedro@peagace.com'} target={"_blank"}/>              
-          </div>
-
-          
-
-          {/* Hamburger */}
-          {/* <motion.nav
-            initial={false}
-            animate={toggle ? "open" : "closed"}
-            className='block md:hidden ml-auto'
-          >
-            <MenuToggle
-              toggle={() => {
-                setToggle(!toggle)
-              }}
-            />
-          </motion.nav> */}
+          </div> */}
         </div>
 
-        {/* <div className={`${toggle ? "" : "hidden"} container md:hidden flex flex-col justify-between h-full w-full bg-white`} >
+        <motion.div
+        className={`${toggle ? "" : "hidden"} z-[999] w-full fixed flex flex-col justify-center justify-items-center h-full bg-lightgray`}
+        animate={toggle ? "open" : "closed"}
+        variants={openNav}
+        initial={false}>
+          <motion.div
+            initial={false}
+            animate={toggle ? "open" : "closed"}
+            variants={openLinks}
+            style={{}}>
+            <ul className=''>
+              {headerData.map((i) => (
+                <Link key={i.id} href={i.href} className={`mx-5 ease-in-out transition duration-300`} onClick={() => setToggle(false)}>
+                  <p className={`${pathname === '/sobre' && 'text-green'} text-right uppercase text-black font-grotesk text-lg ease-out transition duration-500 hover:ease-out hover:transition hover:duration-500 hover:text-white py-2`}>
+                    {i.text}
+                  </p>
+                </Link>
+              ))}
+            </ul>
+          </motion.div>
+          
+
+
+        </motion.div>
+
+        {/* <div className={`${toggle ? "" : "hidden"} container md:hidden flex flex-col justify-between h-full w-full`} >
           <motion.div
             initial={false}
             animate={toggle ? "open" : "closed"}
@@ -164,7 +180,7 @@ export default function Header() {
           </motion.div>
         </div> */}
 
-      </motion.div>
+      {/* </motion.div> */}
     </>
   )
 }
