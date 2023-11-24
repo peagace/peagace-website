@@ -20,9 +20,9 @@ const Home = () => {
      
       {/* INTRO */}
       <section className='bg-lightgray relative h-screen w-full flex'>
-      {/* <div className='absolute w-full h-full'>
+      <div className='absolute w-full h-full pointer-events-none'>
         <Experience />
-      </div> */}
+      </div>
         <div className='flex flex-col self-end w-full'>
           <div className='grid grid-cols-12 mx-4'>  
             <div className='col-span-12 mb-4 max-w-max'>

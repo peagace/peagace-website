@@ -10,7 +10,7 @@ import { useRef } from 'react'
 export default function Scene({ ...props }) {
   const { nodes, materials } = useSpline('https://prod.spline.design/3rOki-2CjQJSHlzw/scene.splinecode')
 
-  useFrame((state, delta) => (ref.current.rotation.x += 0.002) + (ref.current.rotation.y += 0.002))
+  useFrame((state, delta) => (ref.current.rotation.x += 0.0001) + (ref.current.rotation.y += -0.003))
   const ref = useRef()
 
   return (
@@ -24,8 +24,8 @@ export default function Scene({ ...props }) {
             material={materials['Cylinder Material']}
             castShadow
             receiveShadow
-            rotation={[1.22, 0, -0.21]}
-            scale={1.8}
+            rotation={[1, -1, -1.5]}
+            scale={1}
           />
         </scene>
       </group>

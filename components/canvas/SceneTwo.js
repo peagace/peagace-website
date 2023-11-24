@@ -6,77 +6,47 @@ import useSpline from '@splinetool/r3f-spline'
 import { OrthographicCamera } from '@react-three/drei'
 
 export default function SceneTwo({ ...props }) {
-  const { nodes, materials } = useSpline('https://prod.spline.design/2YdWTjYXFzSXHnI4/scene.splinecode')
+  const { nodes, materials } = useSpline('https://prod.spline.design/BpBgE3a47CP3dLjs/scene.splinecode')
   return (
     <>
       <color attach="background" args={['#e7e7e7']} />
       <group {...props} dispose={null}>
-        <scene name="Scene">
-          {/* <group name="Group" position={[-27.4, -93.51, 143.39]}>
-            <pointLight
-              name="Point Light 3"
-              castShadow
-              intensity={4}
-              distance={500}
-              shadow-mapSize-width={4096}
-              shadow-mapSize-height={4096}
-              shadow-camera-near={100}
-              shadow-camera-far={100000}
-              position={[24.39, 85.49, -199.47]}
-              scale={[1, 1, 10.92]}
-            />
-            <pointLight
-              name="Point Light 2"
-              castShadow
-              intensity={0.1}
-              decay={5}
-              distance={1397}
-              shadow-mapSize-width={4096}
-              shadow-mapSize-height={4096}
-              shadow-camera-near={100}
-              shadow-camera-far={100000}
-              position={[-264.74, -164.08, 85.22]}
-              scale={[1, 1, 10.92]}
-            />
-            <pointLight
-              name="Point Light"
-              castShadow
-              intensity={3}
-              distance={500}
-              shadow-mapSize-width={4096}
-              shadow-mapSize-height={4096}
-              shadow-camera-near={100}
-              shadow-camera-far={100000}
-              color="#3284a5"
-              position={[264.74, 164.08, 199.47]}
-              scale={[1, 1, 10.92]}
-            />
-          </group> */}
+        <scene name="Scene 1">
           <mesh
-            name="Torus Knot"
-            geometry={nodes['Torus Knot'].geometry}
-            material={materials['Shiny Shadow']}
+            name="MASK"
+            geometry={nodes.MASK.geometry}
+            material={materials['MASK Material']}
             castShadow
             receiveShadow
-            position={[0, 0, 0]}
-            scale={0.8}
+            position={[-29.47, 5, -491]}
+            rotation={[0, -Math.PI / 2, 0]}
           />
-          {/* <directionalLight
-            name="Directional Light"
+          <mesh
+            name="LIGHT-SPHERE2"
+            geometry={nodes['LIGHT-SPHERE2'].geometry}
+            material={materials['LIGHT-SPHERE2 Material']}
             castShadow
-            intensity={0.1}
-            shadow-mapSize-width={1024}
-            shadow-mapSize-height={1024}
-            shadow-camera-near={-10000}
-            shadow-camera-far={100000}
-            shadow-camera-left={-1000}
-            shadow-camera-right={1000}
-            shadow-camera-top={1000}
-            shadow-camera-bottom={-1000}
-            position={[200, 300, 300]}
-          /> */}
-          {/* <OrthographicCamera name="1" makeDefault={true} far={10000} near={-50000} /> */}
-          {/* <hemisphereLight name="Default Ambient Light" intensity={55} color="#eaeaea" /> */}
+            receiveShadow
+            position={[-139.22, 221.18, -569.19]}
+            rotation={[0, 0.59, 0]}
+          />
+          <mesh
+            name="LIGHT-SPHERE"
+            geometry={nodes['LIGHT-SPHERE'].geometry}
+            material={materials['LIGHT-SPHERE Material']}
+            castShadow
+            receiveShadow
+            position={[-22.9, -79.92, -448.55]}
+          />
+          <mesh
+            name="GLASS-SPHERE"
+            geometry={nodes['GLASS-SPHERE'].geometry}
+            material={materials['GLASS-SPHERE Material']}
+            castShadow
+            receiveShadow
+          />
+          <OrthographicCamera name="1" makeDefault={true} far={10000} near={-50000} />
+          <hemisphereLight name="Default Ambient Light" intensity={0.75} color="#eaeaea" />
         </scene>
       </group>
     </>
