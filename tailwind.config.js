@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     screens: {
       xs: '325px',
-      sm: '515x',
+      sm: '515px',
       md: '768px',
       lg: '1024px',
       xl: '1104px', 
@@ -80,12 +80,18 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-fade': 'linear-gradient(0deg, #CCCCCC 0%, #CCCCCC00 100%)',
+
         'intro': "url('/assets/main/bg.svg')",
         'gradient-test':  "linear-gradient(180deg, #14121B 0%, #0C0A12 100%)",
 
         'project-preview-01':  "url('/assets/projects/air-01.png')",
-        'project-preview-02':  "url('/assets/projects/mais-uma-01.png')",
-        'project-preview-03':  "url('/assets/projects/nftoyer-01.png')",
+        'project-preview-02':  "url('/assets/projects/nftoyer-01.png')",
+        'project-preview-03':  "url('/assets/projects/sflex-01.png')",
+        'project-preview-04':  "url('/assets/projects/mais-uma-01.png')",
+        'project-preview-05':  "url('/assets/projects/soon-01.png')",
+        'project-preview-06':  "url('/assets/projects/soon-02.png')",
+
 
         'footer': "url('/assets/main/bg-footer.svg')",
         

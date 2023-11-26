@@ -1,124 +1,38 @@
 // 'use client'
-import Link from "next/link";
 import Image from "next/image";
-import { footerData } from "@/data/footer-data";
-import { generalData } from "@/data/general-data";
+import Clock from "../clock/Clock";
 
 const Footer = () => {
+    const year = new Date().getFullYear()
     return (
-        <footer className="bg-footer-bg">
-            <div className="container">
-                <div className="grid gap-x-4 gap-y-12 pt-24 pb-24 grid-cols-12">
+        <section className='bg-footer bg-center bg-cover grid grid-cols-12 pt-56'>
+            <div className='col-span-12 lg:col-span-6 flex flex-col place-content-end' id='contact'>
+                <h1 className='text-half lg:text-xl text-black pt-4 mx-4  '>LET'S START</h1>
+                <h1 className='text-half lg:text-xl italic font-[1] font-grotesk text-accent'>CREATING.</h1>
+            </div>
 
-                    <div className=" col-span-12 lg:col-span-3">
-                        {/* <!-- Logo --> */}
-                        <Link href="/" className="">
-                            <Image
-                                src="/assets/main/main-logo.svg"
-                                className="grayscale brightness-[10] mb-5"
-                                alt="BRITE Informática"
-                                height={30}
-                                width={120}
-                            />
-                        </Link>
-                        <Link href="#" className="mb-6">
-                            {/* <img
-                    src="/images/LogoCirsys.svg"
-                    className="max-h-7 dark:block block mb-6"
-                    alt="CIRSYS Tech"
-                  /> */}
-                        </Link>
-                        <p className="text-secondary text-xs mb-2 max-w-[260px] "> {generalData.slogan} </p>
-                        <p className="text-secondary text-xs mb-2 max-w-[260px] "> © {new Date().getFullYear()} {generalData.name} </p>
-                        <div className='flex flex-row mb-12'>
-                            {generalData.links.map((i) => (
-                                <a target='_blank' href={i.href} className="mr-4">
-                                    <Image
-                                        src={i.image}
-                                        alt="Social media icon"
-                                        width={18}
-                                        height={18}
-                                        className="hover:brightness-200 ease-out transition duration-200"
-                                    />
-                                </a>
-                            ))}
-                            {/* <Image
-                                src="/assets/icons/social/linkedin.svg"
-                                alt="Hokup Logo"
-                                width={18}
-                                height={18}
-                                className="hover:brightness-200 ease-out transition duration-200"
-                            />
-                            <a target='_blank' href='https://www.instagram.com/brite.informatica/' className="mr-4">
-                                <Image
-                                    src="/assets/icons/social/instagram.svg"
-                                    alt="Hokup Logo"
-                                    width={18}
-                                    height={18}
-                                    className="hover:brightness-200 ease-out transition duration-200"
-                                />
-                            </a> */}
-                            {/* <a target='_blank' href='https://www.facebook.com/profile.php?id=100093501758299' className="mr-4">
-                                <Image
-                                    src="/assets/icons/social/facebook.svg"
-                                    alt="Hokup Logo"
-                                    width={20}
-                                    height={20}
-                                    className="hover:brightness-200 ease-out transition duration-200"
-                                />
-                            </a> */}
-                        </div>
-                        <div className="flex flex-row">
-                            {/* <Image
-                                src="/assets/icons/certified-lenovo-partner-03.svg"
-                                alt="Hokup Logo"
-                                width={84}
-                                height={28}
-                                className="mr-2"
-                            /> */}
-                            {/* <p className="text-[10px] text-secondary max-w-[114px]">Business Informática LTDA 62.547.484/0001-40</p> */}
+            <div className='col-span-12 lg:col-span-6 flex flex-col justify-items-end content-end items-end place-content-end mb-6'>
+                <Image className='rotate-90 self-end mb-4 mr-4 lg:mt-0 mt-14' src="/assets/main/Arrow.svg" height={23} width={23} />
+                <a href="mailto:pedro@peagace.com" className='mr-4 self-end text-right text-halfest lg:text-half break-all text-black sm:font-[1] xs:font-[1] md:font-[1] lg:font-[1] xl:font-[1] xxl:font-[1] decoration-1 underline-offset-8 underline cursor:pointer hover:ease-out hover:transition hover:duration-100 ease-out transition duration-100 hover:text-accent italic font-[1] font-grotesk'>PEDRO@PEAGACE.COM</a>
+            </div>
 
-                        </div>
 
-                    </div>
-
-                    <div className="w-full hidden lg:block">
-                    </div>
-
-                    {footerData.map((single) => (
-                        <div
-                            className={`${single.diffClass} col-span-6 lg:col-span-2`}
-                            key={single.id}
-                        >
-                            <h4 className="text-secondary text-md mb-6 text-footer-title">
-                                {single.title}
-                            </h4>
-                            <ul className="text-white text-md flex flex-col ">
-                                {single.list.map((item) => {
-                                    const { id, href, text } = item;
-                                    return (
-                                        <li key={id} className="my-1">
-                                            <Link href={href} className="hover:text-footer-text-hover text-footer-text ease-out transition duration-200">
-                                                {text}
-                                            </Link>
-                                        </li>
-                                    );
-                                })}
-                            </ul>
-                        </div>
-                    ))}
+            <div className='col-span-6 flex flex-col place-content-end ml-4 mb-4'>
+                <div className='flex justify-items-center justify-content-start self-start justify-center'>
+                    <Image src="/assets/main/main-logo.svg" height={28} width={28} className=' opacity-60' />
+                    <h1 className='text-left text-xs text-gray uppercase self-center pl-2'>PEAGACE © {year}<br></br>CREATING SINCE 1996</h1>
                 </div>
             </div>
 
-            <div className="bg-black hover:bg-white group transition duration-500 ease-out">
-                <a className="" href="https://hokup.com.br" target="_blank">
-                    <div className="container flex items-center ">
-                        <Image className="group-hover:brightness-0 mr-4" src="/assets/main/main-logo-icon.svg" width={12} height={12} />
-                        <p className="pr-2 text-white text-xs group-hover:text-black group-hover:font-bold">created at hokup.com.br</p>
-                    </div>
-                </a>
+            <div className='col-span-6 flex flex-col place-content-end mr-4 mb-4'>
+                <div className='flex justify-items-end justify-content-end self-end justify-end'>
+                    <h1 className='text-right text-xs text-gray uppercase self-center pr-4'>LOCAL TIME<br></br><Clock/></h1>
+                    <h1 className='text-right text-xs text-gray uppercase self-center pl-2'>VERSION<br></br>2.8.16</h1>
+                </div>
             </div>
-        </footer>
+
+
+        </section>
     );
 };
 

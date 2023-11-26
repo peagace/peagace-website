@@ -55,7 +55,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='selection:bg-black selection:text-white'>
+    <html lang="en" className='selection:bg-black selection:text-white background:bg-accent'>
       <body className={myFont.className}>
         {/* <Header /> */}
         <SmoothScroll>
