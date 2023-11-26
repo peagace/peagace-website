@@ -32,8 +32,8 @@ const Home = () => {
         <div className='absolute w-full h-full pointer-events-none'>
           <Experience />
         </div>
-        <div className='flex flex-col self-end w-full'>
-          <div className='grid grid-cols-12 mx-4'>
+        <div className='flex flex-col self-end w-full '>
+          <div className='grid grid-cols-12 mx-4 '>
             <div className='col-span-12 mb-4 max-w-max'>
               <Button text={'SCHEDULE OPEN'} link={'/#contact'} />
             </div>
@@ -98,7 +98,7 @@ const Home = () => {
           <ProjectCard category={'CONCEPT DESIGN / 3D / SIMULATION'} title={'NIKE AIR PILLS'} image={'bg-project-preview-01'} />
         </div>
 
-        <div className='col-span-12 lg:col-span-7 lg:col-start-6 mx-4 pt-5 lg:pt-0'>
+        <div className='col-span-12 lg:col-span-7 lg:col-start-6 mx-4 pt-10 lg:pt-0'>
           <div className='group'>
               <motion.div className={`bg-project-preview-02 lg:h-[1063px] h-[600px] bg-contain bg-no-repeat bg-center`}
               initial={{backgroundSize: '100%', borderRadius:'0px'}}
@@ -110,7 +110,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='col-span-12 lg:col-span-6 mx-4 pt-5'>
+        <div className='col-span-12 lg:col-span-6 mx-4 lg:pt-5 pt-10'>
           <div className='group'>
               <motion.div className={`bg-project-preview-03 lg:h-[511px] h-[600px] bg-contain bg-no-repeat bg-center`}
               initial={{backgroundSize: '100%', borderRadius:'0px'}}
@@ -122,7 +122,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='col-span-12 lg:col-span-6 lg:col-start-7 mx-4 pt-5'>
+        <div className='col-span-12 lg:col-span-6 lg:col-start-7 mx-4 lg:pt-5 pt-10'>
           <div className='group'>
               <motion.div className={`bg-project-preview-04 lg:h-[908px] h-[600px] bg-contain bg-no-repeat bg-center`}
               initial={{backgroundSize: '100%', borderRadius:'0px'}}
@@ -134,7 +134,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='col-span-12 lg:col-span-7 lg:col-start-1 mx-4 pt-5'>
+        <div className='col-span-12 lg:col-span-7 lg:col-start-1 mx-4 lg:pt-5 pt-10'>
           <div className='group'>
               <motion.div className={`bg-project-preview-05 lg:h-[1063px] h-[600px] bg-contain bg-no-repeat bg-center`}
               initial={{backgroundSize: '100%', borderRadius:'0px'}}
@@ -146,7 +146,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='col-span-12 lg:col-span-5 mx-4 pt-5'>
+        <div className='col-span-12 lg:col-span-5 mx-4 lg:pt-5 pt-10'>
           <ProjectCard category={'? / ?'} title={'COMING SOON'} image={'bg-project-preview-06'} />
         </div>
     

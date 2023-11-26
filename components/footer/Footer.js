@@ -27,11 +27,9 @@ const Footer = () => {
             <div className='col-span-6 flex flex-col place-content-end mr-4 mb-4'>
                 <div className='flex justify-items-end justify-content-end self-end justify-end'>
                     <h1 className='text-right text-xs text-gray uppercase self-center pr-4'>LOCAL TIME<br></br><Clock/></h1>
-                    <h1 className='text-right text-xs text-gray uppercase self-center pl-2'>VERSION<br></br>2.8.16</h1>
+                    <h1 className='text-right text-xs text-gray uppercase self-center pl-2'>VERSION<br></br>4.2.0</h1>
                 </div>
             </div>
-
-
         </section>
     );
 };
