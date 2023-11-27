@@ -1,10 +1,10 @@
 const generalData =
 {
-    name: 'PEAGACE',
-    slogan: 'MULTIDISCIPLINARY DESIGNER WITH OVER 8+ YEARS OF EXPERIENCE IN CREATING.',
+    name: 'PEAGACE ©',
+    slogan: 'WORLDWIDE DESIGNER WITH OVER 8+ YEARS OF EXPERIENCE IN CREATING.',
     cnpj: '',
     email: 'pedro@peagace.com',
-    phone: '+55 11 99697*-8150',
+    phone: '+55 11 99697-8150',
     whatsapp: '',
     adressLine: '',
     zipCode: '',

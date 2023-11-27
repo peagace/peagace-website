@@ -45,7 +45,7 @@ export const metadata = {
       {
         url: metaData.metaImage,
         width: 1200,
-        height: 600,
+        height: 630,
       },     
     ],
     locale: 'pt_BR',

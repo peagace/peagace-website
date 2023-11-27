@@ -6,16 +6,18 @@ import { useState } from "react";
 import Image from "next/image";
 
 export const LoadingScreen = ({ started, onStarted }) => {
+    const year = new Date().getFullYear()
     const { progress } = useProgress();
     const [loadingStatus, setLoadingStatus] = useState(true);
 
-    const { animPage } = useSpring({
+    const { animPage, animPos } = useSpring({
         animPage: progress === 100 ? ('0vh') : ('100vh'),
+        animPos: progress === 100 ? ('-35px') : ('0px'),
         config: {
             duration: 750,
             easing: easings.easeInOutExpo,
         },
-        delay: 600,
+        delay: 400,
         onRest: () => {
             setLoadingStatus(false)
         }
@@ -30,7 +32,7 @@ export const LoadingScreen = ({ started, onStarted }) => {
             duration: 600,
             easing: easings.easeInOutExpo,
         },
-        delay: 200,
+        delay: 100,
     });
 
     return (
@@ -41,41 +43,43 @@ export const LoadingScreen = ({ started, onStarted }) => {
                         width: '100vw',
                         height: animPage,
                         position: 'fixed',
-                        background: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(23,23,32,1) 100%)',
-                        top: '0px',
+                        background: '#CCCCCC',
+                        top: animPos,
                         display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
+                        justifyContent: 'center',                      
                         zIndex: '9999',
+                        padding:'16px',
                     }}
                 >
                     <animated.div
                         style={{
                             position: 'relative',
-                            width: '250px',
-                            height: '140px',
                             y: animLogoPosition,
                             opacity: animLogoOpacity,
                             display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center'
+                            width:'full',
+                            width:'100vw',
+                            justifyContent:"space-between",
+                            alignItems:'center'
                         }}
                     >
                         <Image
-                            width={100}
-                            height={100}
+                            width={28}
+                            height={28}
                             alt='image'
-                            src="/assets/main/main-logo.svg"
+                            src="/assets/main/gray-logo.svg"
                         />
+                        <p className='text-xs text-right text-gray'>PEAGACE ©<br></br>{year}</p>
+
 
                         <animated.div
                             style={{
                                 position: 'absolute',
                                 left: '0',
-                                bottom: '0',
+                                bottom: '45%',
                                 height: '2px',
                                 width: `100%`,
-                                backgroundColor: '#ffffff4b'
+                                backgroundColor: '#A8A8A8'
                             }}
                         >
                             <animated.div
@@ -83,9 +87,9 @@ export const LoadingScreen = ({ started, onStarted }) => {
                                     position: 'absolute',
                                     left: '0',
                                     bottom: '0',
-                                    height: '2px',
+                                    height: '3px',
                                     width: `${progress}%`,
-                                    backgroundColor: 'white'
+                                    backgroundColor: '#202020'
                                 }}
                             >
 
