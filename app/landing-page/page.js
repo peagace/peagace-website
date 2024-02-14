@@ -1,6 +1,5 @@
 'use client'
 import * as React from 'react';
-
 import Image from 'next/image'
 import Link from 'next/link'
 import Experience from '@/components/canvas/Canvas';
@@ -9,7 +8,6 @@ import Clock from '@/components/clock/Clock';
 import { motion, AnimatePresence } from "framer-motion"
 import ProjectCard from '@/components/project-card/ProjectCard';
 import { LoadingScreen } from '@/components/loading-screen/LoadingScreen';
-
 
 const Home = () => {
 
@@ -96,7 +94,7 @@ const Home = () => {
        >
         <div className='col-span-12 lg:col-span-5 mx-4'>
           <a href={'/nikeair'}>
-            <ProjectCard category={'CONCEPT DESIGN / 3D / SIMULATION'} title={'NIKE AIR PILLS'} image={'bg-project-preview-01'} />
+            <ProjectCard category={'CONCEPT DESIGN / 3D / SIMULATION'} title={'NIKE AIR PILLS'} image={'bg-project-preview-05'} />
           </a>
         </div>
 

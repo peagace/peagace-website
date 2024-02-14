@@ -90,7 +90,7 @@ module.exports = {
         'project-preview-02':  "url('/assets/projects/nftoyer-01.png')",
         'project-preview-03':  "url('/assets/projects/sflex-01.png')",
         'project-preview-04':  "url('/assets/projects/mais-uma-01.png')",
-        'project-preview-05':  "url('/assets/projects/soon-01.png')",
+        'project-preview-05':  "url('/assets/projects/potte-01.png')",
         'project-preview-06':  "url('/assets/projects/soon-02.png')",
 
 
