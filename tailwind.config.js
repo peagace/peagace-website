@@ -68,7 +68,7 @@ module.exports = {
     },
     fontFamily: {
       'grotesk': ["FFF Acid Grotesk"],
-      'grotesk-italic': ["FFF Acid Grotesk Italic"],
+      'grotesk-italic': ["FFF Acid Grotesk"],
     },
     backgroundSize: {
       'auto': 'auto',
