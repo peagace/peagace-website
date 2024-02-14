@@ -31,7 +31,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.4, easings: ['easeOut'] }}
-            className='text-half xxl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-xl text-right text-black'>UNDER <span className='font-[1] italic font-grotesk'>DEV</span>.</motion.p>
+            className='text-half xxl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-xl text-right text-black'>UNDER <span className='font-[1] font-grotesk-italic'>DEV</span>.</motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
