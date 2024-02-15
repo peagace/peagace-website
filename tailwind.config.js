@@ -75,6 +75,7 @@ module.exports = {
       'cover': 'cover',
       'contain': 'contain',
       'scale': '120%',
+      'card': '110%',
     },
     extend: {
       backgroundImage: {
@@ -86,12 +87,12 @@ module.exports = {
         'intro': "url('/assets/main/bg.svg')",
         'gradient-test':  "linear-gradient(180deg, #14121B 0%, #0C0A12 100%)",
 
-        'project-preview-01':  "url('/assets/projects/air-01.png')",
+        'project-preview-01':  "url('/assets/projects/soon-02.png')",
         'project-preview-02':  "url('/assets/projects/nftoyer-01.png')",
         'project-preview-03':  "url('/assets/projects/sflex-01.png')",
         'project-preview-04':  "url('/assets/projects/mais-uma-01.png')",
-        'project-preview-05':  "url('/assets/projects/potte-01.png')",
-        'project-preview-06':  "url('/assets/projects/soon-02.png')",
+        'project-preview-05':  "url('/assets/projects/soon-01.png')",
+        'project-preview-06':  "url('/assets/projects/soon-03.png')",
 
 
         'footer': "url('/assets/main/bg-footer.svg')",

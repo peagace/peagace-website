@@ -41,3 +41,110 @@ body {
     background-color: #3030309d;
     border-radius: 45px;
   }
+
+  @layer base {
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 100;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-ExtraLight-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk Italic;
+      font-weight: 100;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-ExtraLight-Italic-TRIAL.otf) format("opentype");
+      font-style: italic;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 200;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-UltraLight-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk Italic;
+      font-weight: 200;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-UltraLight-Italic-TRIAL.otf) format("opentype");
+      font-style: italic;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 300;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Light-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk Italic;
+      font-weight: 300;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Light-Italic-TRIAL.otf) format("opentype");
+      font-style: italic;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 400;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Normal-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk Italic;
+      font-weight: 400;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Norma-Italic-TRIAL.otf) format("opentype");
+      font-style: italic;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 500;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Regular-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 600;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Medium-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 700;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Bold-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 800;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-ExtraBold-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  
+    @font-face {
+      font-family: FFF Acid Grotesk;
+      font-weight: 900;
+      src: url(../public/assets/fonts/FFF-AcidGrotesk-Black-TRIAL.otf) format("opentype");
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+  
