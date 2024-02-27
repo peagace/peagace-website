@@ -32,7 +32,7 @@ const Home = () => {
         <div className='absolute w-full h-full pointer-events-none'>
           <Experience />
         </div>
-        <div className='flex flex-col self-end w-full lg:pb-0 pb-12'>
+        <div className='flex flex-col self-end w-full lg:pb-0 pb-[40px]'>
           <div className='grid grid-cols-12 px-4 '>
             <div className='col-span-12 mb-4 max-w-max'>
               <Button text={'SCHEDULE OPEN'} link={'/#contact'} />

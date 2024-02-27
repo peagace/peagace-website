@@ -26,9 +26,9 @@ const nftoyer = () => {
       <ProjectHeader title={'NFTOYER'} category={'PRODUCT DESIGN / 3D'} year={'2022'} />
 
       <div className='w-full h-full bg-lightgray pt-4 px-4'>
-        <Image src={Image1} height={3018} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' priority/>
+        <Image src={Image1} height={'auto'} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' priority/>
 
-        <Image src={Image2} height={1464} width={18800} className='self-center mt-4' quality={100} unoptimized='true' placeholder='blur'/>
+        <Image src={Image2} height={'auto'} width={18800} className='self-center mt-4' quality={100} unoptimized='true' placeholder='blur'/>
 
         <div className='grid grid-cols-12 gap-4'>
           <div className='lg:col-span-4 col-span-12'>
