@@ -5,7 +5,7 @@ import Clock from "../clock/Clock";
 const Footer = () => {
     const year = new Date().getFullYear()
     return (
-        <section className='bg-footer bg-center bg-cover grid grid-cols-12 pt-56'>
+        <section className='bg-footer bg-center bg-cover grid grid-cols-12 pt-32'>
             <div className='col-span-12 lg:col-span-6 flex flex-col place-content-end' id='contact'>
                 <h1 className='text-half lg:text-xl text-black pt-4 mx-4'>LET'S START</h1>
                 <h1 className='pl-12 text-half lg:text-xl italic font-[1] font-grotesk text-accent'>CREATING.</h1>

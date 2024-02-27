@@ -2,41 +2,57 @@
 import * as React from 'react';
 import ProjectHeader from '@/components/project-header/ProjectHeader';
 import Image from 'next/image';
+import Image1 from '../../public/assets/projects/sflex/sflex-01.png'
+import Image2 from '../../public/assets/projects/sflex/sflex-02.png'
+import Image3 from '../../public/assets/projects/sflex/sflex-03.png'
+import Image4 from '../../public/assets/projects/sflex/sflex-04.png'
+import Image5 from '../../public/assets/projects/sflex/sflex-05.png'
+import Image6 from '../../public/assets/projects/sflex/sflex-06.png'
+import Image7 from '../../public/assets/projects/sflex/sflex-07.png'
+import Image8 from '../../public/assets/projects/sflex/sflex-08.png'
+import Image9 from '../../public/assets/projects/sflex/sflex-09.png'
+import Animation from '@/components/animations/Animation';
+import Button from '@/components/button/Button';
 
 const sflex = () => {
 
   return (
     <>
-      <ProjectHeader title={'SFLEX'} category={'LOGO DESIGN / VISUAL IDENTITY'} year={'2023'}/>
+      <Animation>
+        <ProjectHeader title={'SFLEX'} category={'LOGO DESIGN / VISUAL IDENTITY'} year={'2023'} />
 
-      <div className='w-full h-full bg-lightgray pt-4 px-4'>
-        <Image src="/assets/projects/sflex/sflex-01.png" height={1100} width={18800} className='self-center' quality={100} unoptimized='true'/>
+        <div className='w-full h-full bg-lightgray pt-4 px-4'>
+          <Image src={Image1} height={1100} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' />
 
-        <Image src="/assets/projects/sflex/sflex-02.png" height={820} width={18800} className='self-center pt-4' quality={100} unoptimized='true'/>   
+          <Image src={Image2} height={820} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
 
-        <div className='grid grid-cols-12'>
-          <div className='lg:col-span-6 col-span-12'>
-            <Image src="/assets/projects/sflex/sflex-03.png" height={930} width={14680} className='self-center pt-4 lg:pr-2 pr-0' quality={100} unoptimized='true'/> 
+          <div className='grid grid-cols-12'>
+            <div className='lg:col-span-6 col-span-12'>
+              <Image src={Image3} height={930} width={14680} className='self-center pt-4 lg:pr-2 pr-0' quality={100} unoptimized='true' placeholder='blur' />
+            </div>
+
+            <div className='lg:col-span-6 col-span-12'>
+              <Image src={Image4} height={930} width={14680} className='self-center pt-4 lg:pl-2 pl-0' quality={100} unoptimized='true' placeholder='blur' />
+            </div>
           </div>
 
-          <div className='lg:col-span-6 col-span-12'>
-            <Image src="/assets/projects/sflex/sflex-04.png"height={930} width={14680} className='self-center pt-4 lg:pl-2 pl-0' quality={100} unoptimized='true'/> 
+          <Image src={Image5} height={1100} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
+
+          <Image src={Image6} height={1101} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
+
+          <Image src={Image7} height={1337} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
+
+          <Image src={Image8} height={1100} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
+
+          <Image src={Image9} height={920} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
+
+          <div className='w-full flex justify-end mt-4'>            
+              <Button text={'BACK TO HOME'} link={'/#projects'} />            
           </div>
-        </div> 
 
-        <Image src="/assets/projects/sflex/sflex-05.png" height={1100} width={18800} className='self-center pt-4' quality={100} unoptimized='true'/>   
+        </div>
+      </Animation>
 
-        <Image src="/assets/projects/sflex/sflex-06.png" height={1101} width={18800} className='self-center pt-4' quality={100} unoptimized='true'/> 
-
-        <Image src="/assets/projects/sflex/sflex-07.png" height={1337} width={18800} className='self-center pt-4' quality={100} unoptimized='true'/> 
-
-        <Image src="/assets/projects/sflex/sflex-08.png" height={1100} width={18800} className='self-center pt-4' quality={100} unoptimized='true'/> 
-
-        <Image src="/assets/projects/sflex/sflex-09.png" height={920} width={18800} className='self-center pt-4' quality={100} unoptimized='true'/> 
-
-       
-      </div>
-      
     </>
   )
 }

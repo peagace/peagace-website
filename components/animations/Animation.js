@@ -6,10 +6,10 @@ const Animation = ({ children, delay }) => {
     return (
         <AnimatePresence>
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0, mixBlendMode:'color-burn'}}
+                    animate={{ opacity: 1, mixBlendMode:'normal'}}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.65, delay: delay }}
+                    transition={{ duration: 0.45, delay: delay }}
                 >
                     {children}
                 </motion.div>
