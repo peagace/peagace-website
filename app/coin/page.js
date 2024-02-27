@@ -18,7 +18,7 @@ const coin = () => {
         <ProjectHeader title={'FMP x TELLA'} category={'CONCEPT DESIGN / 3D / ANIMATION'} year={'2023'} />
 
         <div className='w-full h-full bg-lightgray pt-4 px-4'>
-          <Image src={Image1} height={720} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur'/>
+          <Image src={Image1} height={720} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' priority/>
 
           <video width="19200" height="1080" loop autoPlay muted className='pt-4'>
             <source src="/assets/projects/coin/coin-02.mp4" type="video/mp4"/>

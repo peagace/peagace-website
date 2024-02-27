@@ -26,7 +26,7 @@ const nftoyer = () => {
       <ProjectHeader title={'NFTOYER'} category={'PRODUCT DESIGN / 3D'} year={'2022'} />
 
       <div className='w-full h-full bg-lightgray pt-4 px-4'>
-        <Image src={Image1} height={3018} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur'/>
+        <Image src={Image1} height={3018} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' priority/>
 
         <Image src={Image2} height={1464} width={18800} className='self-center mt-4' quality={100} unoptimized='true' placeholder='blur'/>
 
@@ -48,13 +48,13 @@ const nftoyer = () => {
 
         <div className='grid grid-cols-12'>          
             <div className='lg:col-span-4 col-span-12 flex flex-col'>
-              <Image src={Image7} height={1185} width={6240} className='self-center mt-4 lg:mr-4 mr-0' quality={100} unoptimized='true' placeholder='blur'/>
+              <Image src={Image7} height={1185} width={6240} className='self-center pt-4 lg:pr-4 pr-0' quality={100} unoptimized='true' placeholder='blur'/>
 
-              <Image src={Image8} height={932} width={6240} className='self-end mt-4 lg:mr-4 mr-0' quality={100} unoptimized='true' placeholder='blur'/>
+              <Image src={Image8} height={932} width={6240} className='self-end pt-4 lg:pr-4 pr-0' quality={100} unoptimized='true' placeholder='blur'/>
             </div>
 
             <div className='lg:col-span-8 col-span-12'>
-              <Image src={Image9} height={2055} width={6240} className='self-center mt-4 h-full' quality={100} unoptimized='true' placeholder='blur'/>
+              <Image src={Image9} height={2055} width={6240} className='self-center pt-4 h-full' quality={100} unoptimized='true' placeholder='blur'/>
             </div>         
         </div>
 

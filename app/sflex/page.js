@@ -22,7 +22,7 @@ const sflex = () => {
         <ProjectHeader title={'SFLEX'} category={'LOGO DESIGN / VISUAL IDENTITY'} year={'2023'} />
 
         <div className='w-full h-full bg-lightgray pt-4 px-4'>
-          <Image src={Image1} height={1100} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' />
+          <Image src={Image1} height={1100} width={18800} className='self-center' quality={100} unoptimized='true' placeholder='blur' priority/>
 
           <Image src={Image2} height={820} width={18800} className='self-center pt-4' quality={100} unoptimized='true' placeholder='blur' />
 
