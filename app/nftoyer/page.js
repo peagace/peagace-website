@@ -62,11 +62,11 @@ const nftoyer = () => {
 
         <div className='grid grid-cols-12'>
           <div className='lg:col-span-6 col-span-12'>
-            <Image src={Image11} height={930} width={14680} className='self-center mt-4 lg:mr-2 mr-0' quality={100} unoptimized='true' placeholder='blur'/>
+            <Image src={Image11} height={930} width={14680} className='self-center pt-4 lg:pr-2 pr-0' quality={100} unoptimized='true' placeholder='blur'/>
           </div>
 
           <div className='lg:col-span-6 col-span-12'>
-            <video width="19200" height="930" loop autoPlay muted className='mt-4 lg:ml-2 ml-0'>
+            <video width="19200" height="930" loop autoPlay muted className='pt-4 lg:pl-2 pl-0'>
               <source src="/assets/projects/nftoyer/nftoyer-12-video.mp4" type="video/mp4" />
             </video>
           </div>          
