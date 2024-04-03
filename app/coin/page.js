@@ -2,11 +2,11 @@
 import * as React from 'react';
 import ProjectHeader from '@/components/project-header/ProjectHeader';
 import Image from 'next/image';
-import Image1 from '../../public/assets/projects/coin/coin-01.png'
-import Image3 from '../../public/assets/projects/coin/coin-03.png'
-import Image4 from '../../public/assets/projects/coin/coin-04.png'
-import Image5 from '../../public/assets/projects/coin/coin-05.png'
-import Image6 from '../../public/assets/projects/coin/coin-06.png'
+import Image1 from '../../public/assets/projects/coin/coin-01.jpg'
+import Image3 from '../../public/assets/projects/coin/coin-03.jpg'
+import Image4 from '../../public/assets/projects/coin/coin-04.jpg'
+import Image5 from '../../public/assets/projects/coin/coin-05.jpg'
+import Image6 from '../../public/assets/projects/coin/coin-06.jpg'
 import Animation from '@/components/animations/Animation';
 import Button from '@/components/button/Button';
 
