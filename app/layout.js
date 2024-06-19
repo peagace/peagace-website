@@ -1,25 +1,27 @@
-import './globals.css'
-import * as React from 'react';
-import localFont from 'next/font/local'
-import { Analytics } from '@vercel/analytics/react';
-import SmoothScroll from '@/components/smooth-scroll/SmoothScroll';
+import "./globals.css";
+import * as React from "react";
+import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
+import SmoothScroll from "@/components/smooth-scroll/SmoothScroll";
 
 //Components
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
-import { metaData } from '@/data/meta-data';
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import { metaData } from "@/data/meta-data";
 
 //Setup & Meta
-const myFont = localFont({ src: [
-  {
-    path: './FFFAcidGroteskVariable.ttf',
-    style: 'normal',
-  },
-  {
-    path: './FFFAcidGroteskVariable.ttf',
-    style: 'italic',
-  },
-], })
+const myFont = localFont({
+  src: [
+    {
+      path: "./FFFAcidGroteskVariable.ttf",
+      style: "normal",
+    },
+    {
+      path: "./FFFAcidGroteskVariable.ttf",
+      style: "italic",
+    },
+  ],
+});
 
 export const metadata = {
   title: metaData.title,
@@ -28,11 +30,14 @@ export const metadata = {
   //Basic
   generator: metaData.title,
   applicationName: metaData.title,
-  referrer: 'origin-when-cross-origin',
+  referrer: "origin-when-cross-origin",
   keywords: metaData.keywords,
-  authors: [{ name: 'Pedro H. Alencar' }, { name: 'PEAGACE', url: 'https://peagace.com' }],
-  creator: 'PEAGACE',
-  publisher: 'PEAGACE',
+  authors: [
+    { name: "Pedro H. Alencar Batista" },
+    { name: "PEAGACE", url: "https://peagace.com" },
+  ],
+  creator: "PEAGACE",
+  publisher: "PEAGACE",
   themeColor: metaData.themeColor,
 
   //Open Graph
@@ -45,25 +50,31 @@ export const metadata = {
       {
         url: metaData.metaImage,
         width: 1200,
-        height: 630,
-      },     
+        height: 600,
+      },
+      {
+        url: metaData.metaImage,
+        width: 1800,
+        height: 1600,
+      },
     ],
-    locale: 'pt_BR',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='selection:bg-black selection:text-white background:bg-accent'>
+    <html
+      lang="en"
+      className="background:bg-accent selection:bg-black selection:text-white"
+    >
       <body className={myFont.className}>
         <Header />
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+        <SmoothScroll>{children}</SmoothScroll>
         <Footer />
         <Analytics />
       </body>
     </html>
-  )
+  );
 }
