@@ -78,7 +78,7 @@ const Home = () => {
                   alt="hero"
                   width={4000}
                   height={5000}
-                  className=""
+                  className="pb-5"
                 />
               </div>
               {/* <h1 className="text-mediumhalf col-span-12 break-words text-black sm:text-lg xl:text-xl xxl:text-xxl">

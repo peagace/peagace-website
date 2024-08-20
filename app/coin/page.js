@@ -113,6 +113,7 @@ const coin = () => {
               height={40}
               className="min-h-10 max-h-10  justify-center self-center"
               quality={100}
+              unoptimized={true}
             />
             <ThirdButton text={"NEXT PROJECT: POTTE"} link={"/potte"} />
           </div>
