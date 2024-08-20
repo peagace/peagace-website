@@ -23,7 +23,7 @@ const SecondaryButton = ({ link, text, target }) => {
           <path
             d="M1 11.0001L11 11.0001L11 1.00006"
             stroke="#272727"
-            sstrokeWidth="2"
+            strokeWidth="2"
             className="duration-[400ms] ease-[cubic-bezier(0.1,1,.34,1)] group-hover:stroke-acid group-hover:transition-all"
           />
           <path

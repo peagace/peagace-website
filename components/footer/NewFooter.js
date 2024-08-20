@@ -57,7 +57,7 @@ const NewFooter = () => {
         />
         <div className="flex justify-between px-5 pt-5">
           <p className="pt-1 text-sm text-newgray">CREATING SINCE 1996</p>
-          <p className="pt-1 text-sm text-newgray">© {year}</p>
+          <p className="pt-1 text-sm text-newgray">v2.1 © {year}</p>
         </div>
       </section>
     </>

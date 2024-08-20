@@ -6,6 +6,7 @@ const Project = ({ id, title, description, tags, image, alt, link }) => {
     <>
       <Link
         href={link}
+        scroll={false}
         className="group grid grid-cols-12 gap-5 bg-lightgray px-5 pb-10 pt-20 duration-[800ms] ease-[cubic-bezier(0,.97,.34,1)] hover:rounded-xl hover:bg-project-gradient  lg:gap-10"
       >
         <p className="col-span-2 text-eighteen text-newgray group-hover:text-newblack lg:col-span-1">

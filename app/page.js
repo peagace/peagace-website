@@ -72,7 +72,7 @@ const Home = () => {
                   className=""
                 />
               </div>
-              <div className="col-span-12 block sm:hidden">
+              <div className="col-span-12 block pb-5 sm:hidden">
                 <Image
                   src={"/assets/main/hero-mobile.svg"}
                   alt="hero"
