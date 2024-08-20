@@ -21,7 +21,7 @@ const metaData = {
   ],
   themeColor: "#BDFF30",
   url: "https://peagace.com",
-  metaImage: "https://i.imgur.com/bfZXJAV.jpeg",
+  metaImage: "https://i.imgur.com/zz4yXej.jpeg",
   locale: "en_US",
 };
 
