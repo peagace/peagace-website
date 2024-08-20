@@ -1,22 +1,23 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
 export default function Clock() {
-    
-      const d = new Date();
-      const [currentTime, setCurrentTime] = React.useState('');
-  
-      React.useEffect(() => {
-        const date = (d.getHours() < 10 ? '0'+d.getHours() : d.getHours()) + ':' + (d.getMinutes() < 10 ? '0'+d.getMinutes() : d.getMinutes()) + ':' + (d.getSeconds() < 10 ? '0'+d.getSeconds() : d.getSeconds());
-        const timer = setInterval(() => {
-          setCurrentTime(date);
-        }, 1000);
-  
-        return () => clearInterval(timer);
-      })
-  
-      return  <>{currentTime}</>
+  const [currentTime, setCurrentTime] = React.useState("");
 
-  
-  }
-  
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      const d = new Date();
+      const hoursGMT3 = (d.getUTCHours() - 3 + 24) % 24; // Adjust for GMT-3
+      const minutes = d.getUTCMinutes(); // Minutes are the same in GMT-3
+      const formattedTime = `${hoursGMT3.toString().padStart(2, "0")}:${minutes
+        .toString()
+        .padStart(2, "0")}`;
+
+      setCurrentTime(formattedTime);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return <>{currentTime}</>;
+}

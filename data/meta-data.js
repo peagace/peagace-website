@@ -1,8 +1,8 @@
 const metaData = {
   title: "PEAGACE ©",
   description:
-    "Helping worldwide brands create unique digital projects from scratch by seamlessly blending design and art.",
-  subtitle: "WORLDWIDE DESIGNER.",
+    "Designer & Art Director helping worldwide brands craft exquisite visual projects.",
+  // subtitle: "Exploring and crafting visual projects where Design, Art Direction and Animation meet.",
   keywords: [
     "PEAGACE",
     "PHC",
@@ -19,9 +19,9 @@ const metaData = {
     "DIGITAL PROJECTS",
     "CREATIVE SOLUTIONS",
   ],
-  themeColor: "#FF0F00",
+  themeColor: "#BDFF30",
   url: "https://peagace.com",
-  metaImage: "https://i.imgur.com/Gnjaut6.png",
+  metaImage: "https://i.imgur.com/bfZXJAV.jpeg",
   locale: "en_US",
 };
 

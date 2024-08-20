@@ -24,6 +24,9 @@ import Image19 from "../../public/assets/projects/potte/potte-19.jpg";
 
 import Animation from "@/components/animations/Animation";
 import Button from "@/components/button/Button";
+import Pill from "@/components/pill/Pill";
+import SecondaryButton from "@/components/button/SecondaryButton";
+import ThirdButton from "@/components/button/ThirdButton";
 
 const potte = () => {
   return (
@@ -31,7 +34,14 @@ const potte = () => {
       <Animation>
         <ProjectHeader
           title={"POTTE"}
-          category={"3D / ANIMATION"}
+          tags={[
+            <Pill text={"ART DIRECTION"} />,
+            <Pill text={"3D"} />,
+            <Pill text={"ANIMATION"} />,
+          ]}
+          description={
+            "Dynamic product animation crafted for Potte, highlighting their plastic containers."
+          }
           year={"2024"}
         />
 
@@ -271,8 +281,16 @@ const potte = () => {
           </div>
 
           {/* FOOTER */}
-          <div className="mt-4 flex w-full justify-end">
-            <Button text={"BACK TO HOME"} link={"/#projects"} />
+          <div className="spacing-y-4 mt-4 flex max-h-max w-full flex-wrap justify-end">
+            <Image
+              src={"/assets/projects/sflex-preview.png"}
+              alt="hero"
+              width={148}
+              height={40}
+              className="min-h-10 max-h-10  justify-center self-center"
+              quality={100}
+            />
+            <ThirdButton text={"NEXT PROJECT: SFLEX"} link={"/sflex"} />
           </div>
         </div>
       </Animation>

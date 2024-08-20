@@ -16,6 +16,8 @@ import Image11 from "../../public/assets/projects/nftoyer/nftoyer-11.jpg";
 import Image13 from "../../public/assets/projects/nftoyer/nftoyer-13.jpg";
 import Animation from "@/components/animations/Animation";
 import Button from "@/components/button/Button";
+import Pill from "@/components/pill/Pill";
+import ThirdButton from "@/components/button/ThirdButton";
 
 const nftoyer = () => {
   return (
@@ -23,7 +25,15 @@ const nftoyer = () => {
       <Animation>
         <ProjectHeader
           title={"NFTOYER"}
-          category={"PRODUCT DESIGN / 3D"}
+          tags={[
+            <Pill text={"CO-FOUNDER"} />,
+            <Pill text={"ART DIRECTION"} />,
+            <Pill text={"3D"} />,
+            <Pill text={"NFT"} />,
+          ]}
+          description={
+            "Pioneering the first Brazilian NFT project with verified celebrity collaborations."
+          }
           year={"2022"}
         />
 
@@ -195,8 +205,16 @@ const nftoyer = () => {
             alt="3D skatepark"
           />
 
-          <div className="mt-4 flex w-full justify-end">
-            <Button text={"BACK TO HOME"} link={"/#projects"} />
+          <div className="spacing-y-4 mt-4 flex max-h-max w-full flex-wrap justify-end">
+            <Image
+              src={"/assets/projects/coin-preview.png"}
+              alt="hero"
+              width={148}
+              height={40}
+              className="min-h-10 max-h-10  justify-center self-center"
+              quality={100}
+            />
+            <ThirdButton text={"NEXT PROJECT: 3D COIN"} link={"/coin"} />
           </div>
         </div>
       </Animation>

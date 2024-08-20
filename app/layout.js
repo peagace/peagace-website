@@ -8,6 +8,8 @@ import SmoothScroll from "@/components/smooth-scroll/SmoothScroll";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import { metaData } from "@/data/meta-data";
+import NewFooter from "@/components/footer/NewFooter";
+import NewHeader from "@/components/header/NewHeader";
 
 //Setup & Meta
 const myFont = localFont({
@@ -33,7 +35,7 @@ export const metadata = {
   referrer: "origin-when-cross-origin",
   keywords: metaData.keywords,
   authors: [
-    { name: "Pedro H. Alencar Batista" },
+    { name: "Pedro Henrique Alencar" },
     { name: "PEAGACE", url: "https://peagace.com" },
   ],
   creator: "PEAGACE",
@@ -70,9 +72,9 @@ export default function RootLayout({ children }) {
       className="background:bg-accent selection:bg-black selection:text-white"
     >
       <body className={myFont.className}>
-        <Header />
+        <NewHeader />
         <SmoothScroll>{children}</SmoothScroll>
-        <Footer />
+        <NewFooter />
         <Analytics />
       </body>
     </html>
