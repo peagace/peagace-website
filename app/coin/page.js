@@ -35,6 +35,7 @@ const coin = () => {
             unoptimized="true"
             placeholder="blur"
             priority
+            alt="3D coin design"
           />
 
           <video
@@ -56,6 +57,7 @@ const coin = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="3D coin"
           />
 
           <Image
@@ -66,6 +68,7 @@ const coin = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="3D coin"
           />
 
           <div className="grid grid-cols-12">
@@ -78,6 +81,7 @@ const coin = () => {
                 quality={100}
                 unoptimized="true"
                 placeholder="blur"
+                alt="3D coin"
               />
             </div>
 
@@ -90,6 +94,7 @@ const coin = () => {
                 quality={100}
                 unoptimized="true"
                 placeholder="blur"
+                alt="3D coin"
               />
             </div>
           </div>
@@ -107,15 +112,15 @@ const coin = () => {
 
           <div className="spacing-y-4 mt-4 flex max-h-max w-full flex-wrap justify-end">
             <Image
-              src={"/assets/projects/potte-preview.png"}
-              alt="hero"
+              src={"/assets/projects/jetcross-preview.png"}
+              alt="Jetcross project preview"
               width={148}
               height={40}
               className="min-h-10 max-h-10  justify-center self-center"
               quality={100}
               unoptimized={true}
             />
-            <ThirdButton text={"NEXT PROJECT: POTTE"} link={"/potte"} />
+            <ThirdButton text={"NEXT PROJECT: JETCROSS"} link={"/jetcross"} />
           </div>
         </div>
       </Animation>

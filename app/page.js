@@ -16,7 +16,7 @@ import PillSchedule from "@/components/pill/PillSchedule";
 import SecondaryButton from "@/components/button/SecondaryButton";
 
 const Home = () => {
-  const year = new Date().getFullYear();
+  // const year = new Date().getFullYear();
   const [start, setStart] = React.useState(false);
 
   return (
@@ -433,6 +433,24 @@ const Home = () => {
 
         <Project
           id={"001"}
+          title={"JETCROSS"}
+          description={
+            "Branding, graphic design, and 3D product visualization for a mini jet boat factory."
+          }
+          tags={[
+            <Pill text={"BRANDING"} />,
+            <Pill text={"GRAPHIC DESIGN"} />,
+            <Pill text={"3D"} />,
+            <Pill text={"RENDERING"} />,
+            <Pill text={"UI DESIGN"} />,
+          ]}
+          image={"/assets/projects/jetcross-cover.jpg"}
+          alt={"Project 001: JETCROSS"}
+          link={"/jetcross"}
+        />
+
+        <Project
+          id={"002"}
           title={"POTTE"}
           description={
             "Dynamic product animation crafted for Potte, highlighting their plastic containers."
@@ -443,7 +461,7 @@ const Home = () => {
             <Pill text={"ANIMATION"} />,
           ]}
           image={"/assets/projects/potte-02.jpg"}
-          alt={"Project 003: POTTE"}
+          alt={"Project 002: POTTE"}
           link={"/potte"}
         />
 
@@ -455,19 +473,19 @@ const Home = () => {
         </div>
 
         <Project
-          id={"002"}
+          id={"003"}
           title={"SFLEX"}
           description={
             "Visual identity and UI Design created for a leading metallurgy company in Brazil."
           }
           tags={[<Pill text={"BRANDING"} />, <Pill text={"UI/WEB DESIGN"} />]}
           image={"/assets/projects/sflex-02.jpg"}
-          alt={"Project 004: SFLEX"}
+          alt={"Project 003: SFLEX"}
           link={"/sflex"}
         />
 
         <Project
-          id={"003"}
+          id={"004"}
           title={"NFTOYER"}
           description={
             "Pioneering the first Brazilian NFT project with verified celebrity collaborations."
@@ -479,19 +497,19 @@ const Home = () => {
             <Pill text={"NFT"} />,
           ]}
           image={"/assets/projects/nftoyer-02.jpg"}
-          alt={"Project 005: NFTOYER"}
+          alt={"Project 004: NFTOYER"}
           link={"/nftoyer"}
         />
 
         <Project
-          id={"004"}
+          id={"005"}
           title={"3D COIN"}
           description={
             "A custom cover and animation crafted specifically for a Spotify canvas loop."
           }
           tags={[<Pill text={"3D"} />, <Pill text={"ANIMATION"} />]}
           image={"/assets/projects/mais-uma-02.jpg"}
-          alt={"Project 006: 3D COIN"}
+          alt={"Project 005: 3D COIN"}
           link={"/coin"}
         />
 

@@ -43,6 +43,7 @@ const sflex = () => {
             unoptimized="true"
             placeholder="blur"
             priority
+            alt="Sflex branding"
           />
 
           <Image
@@ -53,6 +54,7 @@ const sflex = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="Sflex grid logo design"
           />
 
           <div className="grid grid-cols-12">
@@ -65,6 +67,7 @@ const sflex = () => {
                 quality={100}
                 unoptimized="true"
                 placeholder="blur"
+                alt="Material label designed for Sflex"
               />
             </div>
 
@@ -77,6 +80,7 @@ const sflex = () => {
                 quality={100}
                 unoptimized="true"
                 placeholder="blur"
+                alt="UI design for website"
               />
             </div>
           </div>
@@ -89,6 +93,7 @@ const sflex = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="Business card layout"
           />
 
           <Image
@@ -99,6 +104,7 @@ const sflex = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="Hero section design"
           />
 
           <Image
@@ -109,6 +115,7 @@ const sflex = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="Sflex graphic design"
           />
 
           <Image
@@ -119,6 +126,7 @@ const sflex = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="Business card layout"
           />
 
           <Image
@@ -129,12 +137,13 @@ const sflex = () => {
             quality={100}
             unoptimized="true"
             placeholder="blur"
+            alt="Social media design"
           />
 
           <div className="spacing-y-4 mt-4 flex max-h-max w-full flex-wrap justify-end">
             <Image
               src={"/assets/projects/nftoyer-preview.png"}
-              alt="hero"
+              alt="NFTOYER project preview"
               width={148}
               height={40}
               className="min-h-10 max-h-10  justify-center self-center"

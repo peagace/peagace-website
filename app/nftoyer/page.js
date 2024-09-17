@@ -208,7 +208,7 @@ const nftoyer = () => {
           <div className="spacing-y-4 mt-4 flex max-h-max w-full flex-wrap justify-end">
             <Image
               src={"/assets/projects/coin-preview.png"}
-              alt="hero"
+              alt="3D coin project preview"
               width={148}
               height={40}
               className="min-h-10 max-h-10  justify-center self-center"
