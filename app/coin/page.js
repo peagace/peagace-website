@@ -112,15 +112,18 @@ const coin = () => {
 
           <div className="spacing-y-4 mt-4 flex max-h-max w-full flex-wrap justify-end">
             <Image
-              src={"/assets/projects/jetcross-preview.png"}
-              alt="Jetcross project preview"
+              src={"/assets/projects/hyalu-preview.png"}
+              alt="hyaluoficial project preview"
               width={148}
               height={40}
               className="min-h-10 max-h-10  justify-center self-center"
               quality={100}
               unoptimized={true}
             />
-            <ThirdButton text={"NEXT PROJECT: JETCROSS"} link={"/jetcross"} />
+            <ThirdButton
+              text={"NEXT PROJECT: HYALUOFICIAL"}
+              link={"/hyaluoficial"}
+            />
           </div>
         </div>
       </Animation>

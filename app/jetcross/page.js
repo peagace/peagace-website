@@ -244,7 +244,7 @@ const jetcross = () => {
               alt="potte project preview"
               width={148}
               height={40}
-              className="min-h-10 max-h-10  justify-center self-center"
+              className="min-h-10 max-h-10 justify-center self-center"
               quality={100}
               unoptimized={true}
             />
