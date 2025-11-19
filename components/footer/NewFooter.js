@@ -25,12 +25,12 @@ const NewFooter = () => {
 
           <div className="w-full pt-5">
             <Link
-              href={"mailto:pedro@peagace.com"}
+              href={"mailto:pedro@centeraxis.studio"}
               target={"_blank"}
               className="group flex justify-center rounded-xl border border-outlinegray bg-acid pb-[10px] pt-[13px] duration-[400ms] ease-[cubic-bezier(0.1,1,.34,1)] hover:rounded-[100px] hover:bg-newblack"
             >
               <p className="text-btn uppercase text-newblack duration-[400ms] ease-[cubic-bezier(0.1,1,.34,1)] group-hover:text-acid ">
-                pedro@peagace.com
+                pedro@centeraxis.studio
               </p>
             </Link>
           </div>
